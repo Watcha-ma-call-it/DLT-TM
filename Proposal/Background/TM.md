@@ -30,20 +30,12 @@ Basically Translation Memory is a database which is used as a store for translat
 
 -  Maintaining multiple TMs
 
-    There doesnt have to be 1 TM for 1 company/person. One entity could have multiple TMs split by product group, Content type, domain. Its when an entity has more than 1 TM it can be very difficult to maintain each individual one, especsially if there is a combination of in-house and external systems utilising TMs and keeping track of the translations.
-
--  Changing Translation Management System
-
-    A time comes when you want to change the Translation Management System being used and this means migration of data will need to occur. It can be quite troublesome to transfer data from one system to another, same goes for uploading and TMs into a new system.
-
--  Synchronization of Data across TMs
-
-    It is pretty common to have multiple TM data in different platforms and in different forms. It then becomes a mammoth task to ensure that all versions of the TM data is synchronised across platforms. For example one TMS may be used for documentation and another TMS be used for UI. The documentation and UI will have their own TM. But the documentation may want to use the UI TM in aid of the translating. This causes an issue when the UI TM is continually updated in the UI TMS, the same changes are not reflected in the documentation TM unless the new TM has been exported and updated.
+    It is sometimes more pratical to maintain different TMs for different categories of translations. For example, it may be prudent to maintain a TM for different content types, such as User Interface strings and Documentation. These TMs may be used in different places for different purposes, for example; Someone may want linguists to translate UI strings in one platform (thus using the UI TM in that platform) and then want linguists to translate Documentation in another platform. This can be a management nightmare as you may have to maintain these TMs (i.e. clean them) seperately outside their respective platforms, to then be uploaded again. This also doesnt take into account when you may want a combination of TMs in one platform. For example the UI TM is being continually updated in one platform, but then the Documentation platform wants to use UI TMs in their leveraging. This causes more overhead as you have to download and upload these TMs to different platforms mulitple times as more updates come in.
 
 -  Distributing TMs to Linguists
 
-    Similarily TMs may be distrubuted to linguists to help with searching, but the TMs are continually updated which arent easily distrubuted, especially when you have multiple TMs in mulitple places.
+    As mentioned before TMs are very useful for linguists to be able to search, so that they can understand style and how certain terminology has been translated before. Some ways to distribute the TM to the linguist is by just giving them the exported TMX file which they can then used their prefered TM search tool. This poses an issue of, how do you keep the linguists TMs up to date with the latest translations so that they are always searching for the latest styles and terminology. With the added overhead of having multiple TMs across different platforms it becomes a cumbersome task to make sure a linguist has access to the TMs they need in order to be able to translate to the best of their ability.
 
 -  Ownership of TMs
 
-    With TMs being duplicated in many different ways and many different platforms, it begs the question, who owns this TM? Does the platform who generated the TM have some right to the ownership of the TM they generated. Does the entity who provided the source strings own the TM? By distributing a TM to a linguist mean that this TM is now free to be distributed as the linguist sees fit?
+    This issue can be quite a complex one, especially with different laws in different countries, and different policies between companies and organisations. However, the same core issue still persists; who exactly owns the TMs? TMs can be generated in many different ways, whether its an in-house localisation system, within an external Translation Management System, or by a linguists who records the translations they have done. This poses many different questions, is the entity who generates a TM owns the TM? Is the owner of the source strings the owner of the TM, regardless of where it was generated? Does a linguist who does the translation own a partial part of the TM (their IP)? If you distribute a TM to someone outside the entity's group does that TM fall under a distribution license? These questions can have very complex and sometime ambiguous answers.
