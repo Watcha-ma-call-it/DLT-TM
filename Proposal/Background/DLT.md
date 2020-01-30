@@ -74,15 +74,15 @@ You may understand what a Distributed Ledger is and the benefits it can bring wi
 
 Before the Internet the Business Stack looked like :
 
-![Pre](../Images/preInternet.png)
+![Pre Internet Phase](../Images/preInternet.png)
 
 With the Internet came an updated stack :
 
-![Pre](../Images/internet.png)
+![Internet Phase](../Images/internet.png)
 
 With DLTs come this updated stack:
 
-![Pre](../Images/DLT.png)
+![DLT Phase](../Images/DLT.png)
 
 
 ## Final Remarks

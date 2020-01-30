@@ -7,3 +7,5 @@ This project idea attempts to combine Distributed Ledger Technology with Transla
 I have outlined my views, thoughts and opinions on what a Translation Memory means. I will be using these views as the basis of my understanding of a Translation Memory throughout this project proposal. [Please read here](./Background/TM "Translation Memory").
 
 I have outlined my views, thoughts and understanding on what Distributed Ledger Technology is. By no means is it a full comprehensive explanation but it will provide enough ground work to understand the proposal. [Please read here](./Background/DLT "Distrubuted Ledger Technology").
+
+## Combining the 2
