@@ -2,29 +2,29 @@
 
 ## What is Translation Memory
 
-Basically Translation Memory is a database which is used as a store for translations that can aid the translation process. New strings can be added to it. Strings within the TM can be updated with better translations. In theory should be maintained and cleaned where outdated translations should be deleted.
+Basically Translation Memory is a database which is used as a store for translations that can aid the translation process. New strings can be added to it. Updates can be made to existing entries. Existing translations can be deleted once they have become outdated. There can be a translation memory for each language or more complex translation memories may contain multiple languages for a given source.
 
 ## Some uses of Translation Memory
 
--  Leverage String for translation
+-  Leveraging Strings for translation
 
-    Translation Management Systems holds a translation memory. Strings are leveraged from the translation memory. The rest are translated. The final translations update the translation memory, to provide better leverage the next time. There could be multiple 'projects' using a combination of translation memories to provide resuse in the future. Meta data can help to determine the best leveraging
+    The translation memory can be used to reuse previoulsy translated strings in new translation in a process called leveraging. Leveraging essentially searches the TM for a string that is similar to an input string. If the input string matches exactly as something previously translated (can be extended to match exactly with context, domain and other metadata) then the input string can be leveraged 100%; meaning actual translation is not necessary. Sometimes input strings can have a similar, but not exact, entry in the TM. These strings are then said to be leveaged at X% (i.e. how 'like' is the input string to the TM entry). Those leveraged strings tend to mean some degree of external translation is needed to completely translate the input string. When a string is fully translated, the translation is added to the TM to be reused (or leveraged) in the future.
 
--  Train MT engines
+-  Training MT engines
 
-    Using just the source and target of the TM, you can train models for Machine Translation engines. This will provide a better more accurate translation when using the engine. A clean TM is best for training.
+    Since Translation memories contain the latest and greatest translations that have been translated to date, it makes it the best place to gather training data for machine translation. Using a clean TM (a clean TM helps the resulting engine be more accurate) the Machine translation engine can create a model that can produce translations which are more alligned with the other translations within the TM. I.e. the same kind of styling/tone, less overtranslations etc. TMs dont have to be used to only train in-house MT engines but they can be used to improve and refine general MT engines; such as those provided by Google, Microsoft and Amazon; to name but a few.
 
 -  Search to help with translations
 
-    During the translation phase a linguist may be able to search a Translation Memory to understand certain styles and terminology used in the past; to adhere to a company standard.
+    During the translation phase a linguist may want to search the Translation Memory for particular styling guidance or to check how a certain term, a product name for example, was previously translated. Having the ability to search aids this process and helps speed it up whilst helping to maintain a general standard that may have been set. 
 
 -  Provide Latest and Greatest translations
 
-    The translation memory should represent the latest and greatest translation for a particular string (in simple terms)
+    In simple terms, the Translation Memory should represent the most up to date and correct translations within the owners portfolio. Should someone, i.e. the consumer, want to use the latest translations available then the Translation Memory is the place to go.
 
 -  An asset of the company
 
-    A Translation Memory is an asset to any company or persons, as it contains data about how documents, code, etc are translated. Essentially the translated IP (depending on Laws)
+    Each translation within the Translation Memory can be considered an asset. Just as the source string, which could be documentation or code, is an asset of whoever owns it, so too is the translated content. What that being said the Translation Memory contains every single translated asset within the company or organisation. These assets are just as valuable as the source assets and should be treated with the same integrity. This explanation, however, glosses over the very complex and sometimes ambiguous discussion of ownership of translated content (IP).
 
 ## Current Issues with Translation Memories
 

@@ -60,6 +60,8 @@ It seems like a neat concept, but now begs the question why is this important or
 
 -  Censorship Proof
 
+-  Smart Contracts / Chaincode
+
 ## DLT's Effect on the Business Stack
 
 ## Final Remarks
