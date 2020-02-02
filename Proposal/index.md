@@ -8,4 +8,6 @@ I have outlined my views, thoughts and opinions on what a Translation Memory mea
 
 I have outlined my views, thoughts and understanding on what Distributed Ledger Technology is. By no means is it a full comprehensive explanation but it will provide enough ground work to understand the proposal. [Please read here](./Background/DLT "Distrubuted Ledger Technology").
 
-## Combining the 2
+## Translation Memory as a Ledger
+
+Lets combine what we know of a translation memory with what we know about ledgers. I will examine what it means for a Translation Memory to be thought of as a ledger of transactions. I will provide a simple example of how a Translation Memory is modelled with transactions and states. I will outline a few areas of expansion beyond the simple example, and how their inclusion adds to what the (simple) Translation Memory can afford. [Please Read here](./TM-with-DLT "Translation Memory as a Ledger").

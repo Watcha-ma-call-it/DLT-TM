@@ -12,7 +12,3 @@ This project aims to combine the already well used and known Translation Memory 
 -  Open collaboration in expanding processes and standards
 
 Please read the proposal which will outline more in-depth about how and why this is the next big thing. The project's proposal is [here](./Proposal/index "Proposal").
-
----
-
-> For the Spanish MT Version Click [here](./es "Spanish").

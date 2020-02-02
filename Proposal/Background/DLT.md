@@ -70,19 +70,30 @@ In almost every single Distributed Ledger Technology there is a concept called s
 
 ## DLT's Effect on the Business Stack
 
-You may understand what a Distributed Ledger is and the benefits it can bring with it. But you may now ask, where do Distributed Ledgers fit in the overall picture. I like to call the overall picture the Business Stack:
+You may understand what a Distributed Ledger is and the benefits it can bring with it. But you may now ask, where do Distributed Ledgers fit in the overall picture. I like to call the overall picture the Business Stack; a very naive look at the components of a business.
 
-Before the Internet the Business Stack looked like :
+---
 
-![Pre Internet Phase](../Images/preInternet.png)
+This is my version of the 'Pre Internet' era :
+
+![Pre Internet Phase](../Images/preInternet.png) 
+
+Before the internet we had a very siloed stack, wherein every company seemingly had the same 3 components. Communications, Data and Business Logic. The Communications component included things like the postal service to talk to external entities, phones to communicate in-house and external entities and any other mechanisms such as pneumatic tubes. The Data component relates to the data that the company has, it could be PII of its customers, or, in the bank example, the actual accounts of its customers; basically the data needed by the company to run. And finally the Business Logic layer is how the business uses the data in the previous component to essentially operate the business. Each business had to some degree a similar set up throughout the pre internet era, this started to change once the internet came along...
+
+---
 
 With the Internet came an updated stack :
 
 ![Internet Phase](../Images/internet.png)
 
+Along came the internet, a high performing multimedia network that changed the whole communications layer. Instead of have a very siloed communication component the whole communication layer essentially became shared across businesses and even individual people. The data and the business logic still remained siloed to each individual enterprise but what the shared communications layer allowed for was easier access to data (via APIs, direct DB connections, etc). Just that high speed connection to data and the enterprise it self completely revolutionized the world, from big shifts to e-commerce to the completely new types of businesses. A great example of the shift is banks, banks went from in-store only type transactions (withdrawal of cash, loan applications, savings deposits, etc.) to online banking (everything in the hands of the users). Data and business logic is still siloed to each enterprise and this is apparent in the likes of Google and Facebook whose data components are vast; containing information about user behaviour, interactions, personal identifiable information. Using this data they can grow and customise their business for each user. Something you may notice is a lot of this data is duplicated in each enterprise, such as the personal information. Data privacy really came into play since a lot of data was held by these enterprises and since they weren't the actual owners of this information good practices were needed in order to protect the owner's against misuse. Understanding what kind of data companies have on their users is something that is a hot topic and on the minds of pretty much everyone. Keep that in mind and lets look at how DLTs come into play...
+
+---
+
 With DLTs come this updated stack:
 
 ![DLT Phase](../Images/DLT.png)
 
+To Be Filled in next
 
 ## Final Remarks
