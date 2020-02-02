@@ -70,15 +70,15 @@ In almost every single Distributed Ledger Technology there is a concept called s
 
 ## DLT's Effect on the Business Stack
 
-You may understand what a Distributed Ledger is and the benefits it can bring with it. But you may now ask, where do Distributed Ledgers fit in the overall picture. I like to call the overall picture the Business Stack; a very naive look at the components of a business.
+You may understand what a Distributed Ledger is and the benefits it can bring with it. But you may now ask, where do Distributed Ledgers fit in the overall picture. To explain the place of DLTs, I am going to explain the events that occurred before to change the picture. I like to call the overall picture the Business Stack. The business stack is made up of 3 components (Communications, Data, Business Logic), its essentially a very naive visualisation of how a company operates. I will illustrate the journey in 3 stages; past, present, future. Where the past is the stack before the Internet, the present is in this internet era and the future being where the stack could go with DLTs. 
 
 ---
 
 This is my version of the 'Pre Internet' era :
 
-![Pre Internet Phase](../Images/preInternet.png) 
+![Pre Internet Phase](../Images/preInternet.png)
 
-Before the internet we had a very siloed stack, wherein every company seemingly had the same 3 components. Communications, Data and Business Logic. The Communications component included things like the postal service to talk to external entities, phones to communicate in-house and external entities and any other mechanisms such as pneumatic tubes. The Data component relates to the data that the company has, it could be PII of its customers, or, in the bank example, the actual accounts of its customers; basically the data needed by the company to run. And finally the Business Logic layer is how the business uses the data in the previous component to essentially operate the business. Each business had to some degree a similar set up throughout the pre internet era, this started to change once the internet came along...
+Before the internet we had a very siloed stack, wherein every company seemingly had the same 3 components. Communications, Data and Business Logic. The Communications component included things like the postal service to talk to external entities, phones to communicate to in-house and external entities and any other mechanisms such as pneumatic tubes. The Data component relates to the data that the company has, it could be PII of its customers, or, in the bank example, the actual accounts of its customers; basically the data needed by the company to run. And finally the Business Logic layer is how the business uses the data in the previous component to essentially operate the business. Each business had to some degree a similar set up throughout the pre internet era, this started to change once the internet came along...
 
 ---
 
@@ -94,6 +94,6 @@ With DLTs come this updated stack:
 
 ![DLT Phase](../Images/DLT.png)
 
-To Be Filled in next
+__To Be Filled in next__
 
 ## Final Remarks
