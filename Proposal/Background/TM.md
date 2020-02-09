@@ -39,3 +39,7 @@ Basically Translation Memory is a database which is used as a store for translat
 -  Ownership of TMs
 
     This issue can be quite a complex one, especially with different laws in different countries, and different policies between companies and organisations. However, the same core issue still persists; who exactly owns the TMs? TMs can be generated in many different ways, whether its an in-house localisation system, within an external Translation Management System, or by a linguists who records the translations they have done. This poses many different questions, is the entity who generates a TM owns the TM? Is the owner of the source strings the owner of the TM, regardless of where it was generated? Does a linguist who does the translation own a partial part of the TM (their IP)? If you distribute a TM to someone outside the entity's group does that TM fall under a distribution license? These questions can have very complex and sometime ambiguous answers.
+
+---
+
+> This page may not encapsulate everything a TM has to offer, nor does it highlight issues with TMs across the industry but I do believe it is enough basic knowledge to help understand the concepts within the proposal. Please head back to the start [here](../index 'The Proposal'). 
