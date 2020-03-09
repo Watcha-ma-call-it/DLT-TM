@@ -14,4 +14,5 @@ Lets combine what we know of a translation memory with what we know about ledger
 
 ## Changes to the Translation Industry
 
-Let have a look at one way which the translation industry may change or shift by utilising DLTs, whether to enhance or completely change the workflows. __To make next__
+Let have a look at one way which the translation industry may change or shift by utilising DLTs, whether to enhance or completely change the workflows. 
+__To make next__
