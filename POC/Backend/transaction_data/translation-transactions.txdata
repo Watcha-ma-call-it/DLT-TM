@@ -1,0 +1,44 @@
+[
+    {
+        "transactionName": "translationExists",
+        "transactionLabel": "A test translationExists transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "createTranslation",
+        "transactionLabel": "A test createTranslation transaction",
+        "arguments": [
+            "001",
+            "some value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "readTranslation",
+        "transactionLabel": "A test readTranslation transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "updateTranslation",
+        "transactionLabel": "A test updateTranslation transaction",
+        "arguments": [
+            "001",
+            "some other value"
+        ],
+        "transientData": {}
+    },
+    {
+        "transactionName": "deleteTranslation",
+        "transactionLabel": "A test deleteTranslation transaction",
+        "arguments": [
+            "001"
+        ],
+        "transientData": {}
+    }
+]
