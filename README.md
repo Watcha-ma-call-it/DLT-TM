@@ -17,8 +17,6 @@ Please read the proposal which will outline more in-depth about how and why this
 
 ---
 
-<br/>
-
 
 ## Running the Network
 
