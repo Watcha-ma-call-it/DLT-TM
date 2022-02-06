@@ -7,7 +7,6 @@ package dev.darrenmatthews;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.hyperledger.fabric.contract.Context;
 import org.hyperledger.fabric.contract.ContractInterface;
 import org.hyperledger.fabric.contract.annotation.Contract;
@@ -43,7 +42,7 @@ public final class TranslationAssetContract implements ContractInterface {
      * @param ctx the transaction context
      */
     @Transaction(intent = Transaction.TYPE.SUBMIT)
-    public void InitLedger(final Context ctx) {
+    public void initLedger(final Context ctx) {
         ChaincodeStub stub = ctx.getStub();
 
         TranslationAsset asset = new TranslationAsset("id1", "Hello World", "en-us", "es-es", "darren", "Text");
@@ -64,7 +63,7 @@ public final class TranslationAssetContract implements ContractInterface {
     }
 
     @Transaction(intent = Transaction.TYPE.SUBMIT)
-    public TranslationAsset CreateAsset(
+    public TranslationAsset createAsset(
             final Context ctx,
             final String id,
             final String source,
@@ -76,7 +75,7 @@ public final class TranslationAssetContract implements ContractInterface {
 
         TranslationAsset asset = new TranslationAsset(id, source, srcLang, trgLang, owner, domain);
 
-        if (AssetExists(ctx, id)) {
+        if (assetExists(ctx, id)) {
             String errorMessage = String.format("Asset %s already exists", id);
             System.out.println(errorMessage);
             throw new ChaincodeException(errorMessage, AssetTransferErrors.ASSET_ALREADY_EXISTS.toString());
@@ -92,12 +91,12 @@ public final class TranslationAssetContract implements ContractInterface {
     /**
      * Retrieves an asset with the specified ID from the ledger.
      *
-     * @param ctx the transaction context
+     * @param ctx     the transaction context
      * @param assetID the ID of the asset
      * @return the asset found on the ledger if there was one
      */
     @Transaction(intent = Transaction.TYPE.EVALUATE)
-    public TranslationAsset ReadAsset(final Context ctx, final String assetID) {
+    public TranslationAsset readAsset(final Context ctx, final String assetID) {
         ChaincodeStub stub = ctx.getStub();
         String assetJSON = stub.getStringState(assetID);
 
@@ -113,16 +112,16 @@ public final class TranslationAssetContract implements ContractInterface {
 
 
     @Transaction(intent = Transaction.TYPE.SUBMIT)
-    public TranslationAsset UpdateAsset(final Context ctx, final String id, final String translation) {
+    public TranslationAsset updateAsset(final Context ctx, final String id, final String translation) {
         ChaincodeStub stub = ctx.getStub();
 
-        if (!AssetExists(ctx, id)) {
+        if (!assetExists(ctx, id)) {
             String errorMessage = String.format("Asset %s does not exist", id);
             System.out.println(errorMessage);
             throw new ChaincodeException(errorMessage, AssetTransferErrors.ASSET_NOT_FOUND.toString());
         }
 
-        TranslationAsset asset = ReadAsset(ctx, id);
+        TranslationAsset asset = readAsset(ctx, id);
         asset.setTarget(translation);
 
         //Use Genson to convert the Asset into string, sort it alphabetically and serialize it into a json string
@@ -133,14 +132,14 @@ public final class TranslationAssetContract implements ContractInterface {
     /**
      * Deletes asset on the ledger.
      *
-     * @param ctx the transaction context
+     * @param ctx     the transaction context
      * @param assetID the ID of the asset being deleted
      */
     @Transaction(intent = Transaction.TYPE.SUBMIT)
-    public void DeleteAsset(final Context ctx, final String assetID) {
+    public void deleteAsset(final Context ctx, final String assetID) {
         ChaincodeStub stub = ctx.getStub();
 
-        if (!AssetExists(ctx, assetID)) {
+        if (!assetExists(ctx, assetID)) {
             String errorMessage = String.format("Asset %s does not exist", assetID);
             System.out.println(errorMessage);
             throw new ChaincodeException(errorMessage, AssetTransferErrors.ASSET_NOT_FOUND.toString());
@@ -152,12 +151,12 @@ public final class TranslationAssetContract implements ContractInterface {
     /**
      * Checks the existence of the asset on the ledger
      *
-     * @param ctx the transaction context
+     * @param ctx     the transaction context
      * @param assetID the ID of the asset
      * @return boolean indicating the existence of the asset
      */
     @Transaction(intent = Transaction.TYPE.EVALUATE)
-    public boolean AssetExists(final Context ctx, final String assetID) {
+    public boolean assetExists(final Context ctx, final String assetID) {
         ChaincodeStub stub = ctx.getStub();
         String assetJSON = stub.getStringState(assetID);
 
@@ -171,7 +170,7 @@ public final class TranslationAssetContract implements ContractInterface {
      * @return array of assets found on the ledger
      */
     @Transaction(intent = Transaction.TYPE.EVALUATE)
-    public String GetAllAssets(final Context ctx) {
+    public String getAllAssets(final Context ctx) {
         ChaincodeStub stub = ctx.getStub();
 
         List<TranslationAsset> queryResults = new ArrayList<>();
@@ -182,7 +181,7 @@ public final class TranslationAssetContract implements ContractInterface {
         // then getStateByRange will retrieve asset with keys between asset0 (inclusive) and asset9 (exclusive) in lexical order.
         QueryResultsIterator<KeyValue> results = stub.getStateByRange("", "");
 
-        for (KeyValue result: results) {
+        for (KeyValue result : results) {
             TranslationAsset asset = genson.deserialize(result.getStringValue(), TranslationAsset.class);
             System.out.println(asset);
             queryResults.add(asset);

@@ -39,8 +39,7 @@ public final class TranslationAsset {
             @JsonProperty("sourceLanguage") final String srcLang,
             @JsonProperty("targetLanguage") final String trgLang,
             @JsonProperty("owner") final String owner,
-            @JsonProperty("domain") final String domain)
-    {
+            @JsonProperty("domain") final String domain) {
         this.id = id;
         this.source = source;
         this.sourceLanguage = srcLang;
