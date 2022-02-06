@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="basic" target="11" />
+      <module name="basic.main" target="11" />
+      <module name="basic.test" target="11" />
+      <module name="DLT_Translation_Memory" target="11" />
+      <module name="DLT_Translation_Memory.main" target="11" />
+      <module name="DLT_Translation_Memory.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
