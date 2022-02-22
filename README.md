@@ -19,12 +19,19 @@ Please read the proposal which will outline more in-depth about how and why this
 
 <br/>
 
+## Prerequisites
 
-## Running the Network
+Add `fabric` and `fabric-ca` binaries to the path in order for the scripts and CLI interactions to behave correctly.
+
+Download the latest releases for [`fabric`](https://github.com/hyperledger/fabric/releases) and [`fabric-ca`](https://github.com/hyperledger/fabric-ca/releases)
+
+Unzip and and add the *`bin`* folders of each to the `PATH` of your machine. Please refer to specifics of your local machine for adding binaries to the `PATH`
 
 <br/>
 
-It is expected to run using a Unix based environment (WSL is recommened for Windows). Before running the network ensure that you have install the below prerequisites outlined [here](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html "Hyperledger PreReqs").
+## Running the Network
+
+It is expected to run using a Unix based environment (WSL is recommended for Windows). Before running the network ensure that you have install the below prerequisites outlined [here](https://hyperledger-fabric.readthedocs.io/en/latest/prereqs.html "Hyperledger PreReqs").
 
 -  Git
 -  cURL
